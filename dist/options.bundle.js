@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("apiKey"),t=document.getElementById("saveButton"),n=document.getElementById("status");chrome.storage.local.get(["geminiApiKey"],t=>{t.geminiApiKey&&(e.value=t.geminiApiKey)}),t.addEventListener("click",()=>{const t=e.value;chrome.storage.local.set({geminiApiKey:t},()=>{n.textContent="API Key saved!",setTimeout(()=>{n.textContent=""},2e3)})})});
+//# sourceMappingURL=options.bundle.js.map

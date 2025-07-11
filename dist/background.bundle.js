@@ -1,0 +1,2 @@
+chrome.runtime.onInstalled.addListener(()=>{chrome.contextMenus.create({id:"askGemini",title:"Geminiに質問する",contexts:["selection"]})}),chrome.contextMenus.onClicked.addListener((e,t)=>{"askGemini"===e.menuItemId&&e.selectionText&&chrome.storage.local.set({selectedText:e.selectionText},()=>{chrome.action.openPopup()})});
+//# sourceMappingURL=background.bundle.js.map

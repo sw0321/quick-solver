@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quick Solver</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    #response {
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      min-height: 100px;
+      white-space: pre-wrap;
+    }
+    #loading {
+      display: none;
+      color: gray;
+    }
+    #error {
+      display: none;
+      color: red;
+    }
+    .button-container {
+      margin-top: 10px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <h2>Quick Solver</h2>
+  <div id="loading">Loading...</div>
+  <div id="error"></div>
+  <div id="response"></div>
+  <div class="button-container">
+    <button id="copyButton">Copy</button>
+    <button id="optionsButton">Settings</button>
+  </div>
+  <script src="dist/popup.bundle.js"></script>
+</body>
+</html>
